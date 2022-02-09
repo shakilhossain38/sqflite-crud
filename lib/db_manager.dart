@@ -43,10 +43,10 @@ class DbManager {
   }
 
   //A single user by id
-  static Future<List<Map<String, dynamic>>> getItem(int id) async {
-    final db = await DbManager.db();
-    return db.query('employees', where: "id = ?", whereArgs: [id], limit: 1);
-  }
+  // static Future<List<Map<String, dynamic>>> getItem(int id) async {
+  //   final db = await DbManager.db();
+  //   return db.query('employees', where: "id = ?", whereArgs: [id], limit: 1);
+  // }
 
   // Update user
   static Future<int> updateUser(

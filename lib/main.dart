@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        // Remove the debug banner
         debugShowCheckedModeBanner: false,
         title: 'Employee List',
         theme: ThemeData(
@@ -37,7 +36,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // All journals
   List<Map<String, dynamic>> employeeList = [];
 
   bool _isLoading = true;
@@ -52,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    getEmployeeList(); // Loading the diary when the app starts
+    getEmployeeList();
   }
 
   final TextEditingController namController = TextEditingController();
